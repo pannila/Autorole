@@ -46,7 +46,7 @@ client.on('message', message => {
 
 client.on('guildMemberAdd', member => {
   if(active === true) {
-    var role = member.guild.roles.find("name", "PUGS");
+    var role = member.guild.roles.find("name", "Unverified");
     member.addRole(role).catch(console.error);
   }
 })
